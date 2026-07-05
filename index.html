@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>乌龟档案法律文档</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4efe4;
+      --card: #fffdf7;
+      --text: #243126;
+      --muted: #7d857b;
+      --green: #5f966b;
+      --line: #e7ddce;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(32px, 7vw, 54px);
+      line-height: 1.05;
+      color: #28583a;
+    }
+    p { font-size: 16px; color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .card {
+      display: block;
+      background: var(--card);
+      border: 1px solid rgba(231, 221, 206, 0.65);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 14px 32px rgba(58, 50, 35, 0.06);
+      color: var(--text);
+      text-decoration: none;
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 22px;
+      color: #253326;
+    }
+    .card span {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .card:hover {
+      border-color: rgba(95, 150, 107, 0.55);
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>乌龟档案法律文档</h1>
+    <p>这里提供「乌龟档案」App 的公开法律文档，用于 App Store Connect 审核资料填写和用户查阅。</p>
+
+    <div class="grid">
+      <a class="card" href="./privacy.html">
+        <strong>隐私政策</strong>
+        <span>查看数据保存、权限使用、导出备份和会员购买相关说明。</span>
+      </a>
+      <a class="card" href="./terms.html">
+        <strong>服务条款</strong>
+        <span>查看 App 使用、会员购买、本地数据和用户责任相关说明。</span>
+      </a>
+    </div>
+
+    <footer>
+      App Store Connect 隐私政策 URL 请填写公开可访问的 privacy.html 地址。
+    </footer>
+  </main>
+</body>
+</html>
